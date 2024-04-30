@@ -1,20 +1,20 @@
-"30-Apr-24 19:48:58" - root - INFO - run_movielens_pipeline.py is started
-"30-Apr-24 19:48:58" - root - INFO - main() method is started 
-"30-Apr-24 19:48:58" - create_objects - INFO - get_spark_object() method is started. The 'TEST' is used.
-"30-Apr-24 19:49:09" - create_objects - INFO - Spark object is created successfully. 
+"30-Apr-24 21:38:05" - root - INFO - run_movielens_pipeline.py is started
+"30-Apr-24 21:38:05" - root - INFO - main() method is started 
+"30-Apr-24 21:38:05" - create_objects - INFO - get_spark_object() method is started. The 'TEST' is used.
+"30-Apr-24 21:38:07" - create_objects - INFO - Spark object is created successfully. 
 
-"30-Apr-24 19:49:15" - validations - INFO - Validate the spark object by printing Current Date [Row(current_date()=datetime.date(2024, 4, 30))]
-"30-Apr-24 19:49:15" - validations - INFO - Spark obect is validated. Spark object is ready.
-"30-Apr-24 19:49:15" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 19:49:15" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\dimension\movies.dat is loaded to dataframe. The extract_files() function is completed. 
+"30-Apr-24 21:38:12" - validations - INFO - Validate the spark object by printing Current Date [Row(current_date()=datetime.date(2024, 4, 30))]
+"30-Apr-24 21:38:12" - validations - INFO - Spark obect is validated. Spark object is ready.
+"30-Apr-24 21:38:12" - movielens_data_ingest - INFO - The extract_file() function is started.
+"30-Apr-24 21:38:12" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\dimension\movies.dat is loaded to dataframe. The extract_files() function is completed. 
 
-"30-Apr-24 19:49:15" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame movies_df.
-"30-Apr-24 19:49:16" - validations - INFO - The DataFrame count is 3883.
-"30-Apr-24 19:49:16" - validations - INFO - The validation of DataFrame movies_df by counting records using df_count() is completed. 
+"30-Apr-24 21:38:12" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame movies_df.
+"30-Apr-24 21:38:13" - validations - INFO - The DataFrame count is 3883.
+"30-Apr-24 21:38:13" - validations - INFO - The validation of DataFrame movies_df by counting records using df_count() is completed. 
 
-"30-Apr-24 19:49:16" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame movies_df.
-"30-Apr-24 19:49:16" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 19:49:19" - validations - INFO - 
+"30-Apr-24 21:38:13" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame movies_df.
+"30-Apr-24 21:38:13" - validations - INFO - The DataFrame top 10 records are: 
+"30-Apr-24 21:38:14" - validations - INFO - 
  	 MovieID                              Title                       Genres
        1                   Toy Story (1995)  Animation|Children's|Comedy
        2                     Jumanji (1995) Adventure|Children's|Fantasy
@@ -26,25 +26,25 @@
        8                Tom and Huck (1995)         Adventure|Children's
        9                Sudden Death (1995)                       Action
       10                   GoldenEye (1995)    Action|Adventure|Thriller
-"30-Apr-24 19:49:19" - validations - INFO - The validation of DataFrame movies_df by fetching top 10 records using df_to10_rec() is completed. 
+"30-Apr-24 21:38:14" - validations - INFO - The validation of DataFrame movies_df by fetching top 10 records using df_to10_rec() is completed. 
 
-"30-Apr-24 19:49:19" - validations - INFO - The DataFrame validation by printing schema of DataFrame movies_df is started.
-"30-Apr-24 19:49:19" - validations - INFO - The DataFrame movies_df schema is:
-"30-Apr-24 19:49:19" - validations - INFO - 	StructField('MovieID', IntegerType(), True)
-"30-Apr-24 19:49:19" - validations - INFO - 	StructField('Title', StringType(), True)
-"30-Apr-24 19:49:19" - validations - INFO - 	StructField('Genres', StringType(), True)
-"30-Apr-24 19:49:19" - validations - INFO - The schema validation of DataFrame movies_df is completed. 
+"30-Apr-24 21:38:14" - validations - INFO - The DataFrame validation by printing schema of DataFrame movies_df is started.
+"30-Apr-24 21:38:14" - validations - INFO - The DataFrame movies_df schema is:
+"30-Apr-24 21:38:14" - validations - INFO - 	StructField('MovieID', IntegerType(), True)
+"30-Apr-24 21:38:14" - validations - INFO - 	StructField('Title', StringType(), True)
+"30-Apr-24 21:38:14" - validations - INFO - 	StructField('Genres', StringType(), True)
+"30-Apr-24 21:38:14" - validations - INFO - The schema validation of DataFrame movies_df is completed. 
 
-"30-Apr-24 19:49:19" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 19:49:19" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\dimension\users.dat is loaded to dataframe. The extract_files() function is completed. 
+"30-Apr-24 21:38:14" - movielens_data_ingest - INFO - The extract_file() function is started.
+"30-Apr-24 21:38:14" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\dimension\users.dat is loaded to dataframe. The extract_files() function is completed. 
 
-"30-Apr-24 19:49:19" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame users_df.
-"30-Apr-24 19:49:20" - validations - INFO - The DataFrame count is 6040.
-"30-Apr-24 19:49:20" - validations - INFO - The validation of DataFrame users_df by counting records using df_count() is completed. 
+"30-Apr-24 21:38:14" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame users_df.
+"30-Apr-24 21:38:14" - validations - INFO - The DataFrame count is 6040.
+"30-Apr-24 21:38:14" - validations - INFO - The validation of DataFrame users_df by counting records using df_count() is completed. 
 
-"30-Apr-24 19:49:20" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame users_df.
-"30-Apr-24 19:49:20" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 19:49:20" - validations - INFO - 
+"30-Apr-24 21:38:14" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame users_df.
+"30-Apr-24 21:38:14" - validations - INFO - The DataFrame top 10 records are: 
+"30-Apr-24 21:38:15" - validations - INFO - 
  	 UserID Gender  Age  Occupation  Zip-code
       1      F    1          10     48067
       2      M   56          16     70072
@@ -56,27 +56,27 @@
       8      M   25          12     11413
       9      M   25          17     61614
      10      F   35           1     95370
-"30-Apr-24 19:49:20" - validations - INFO - The validation of DataFrame users_df by fetching top 10 records using df_to10_rec() is completed. 
+"30-Apr-24 21:38:15" - validations - INFO - The validation of DataFrame users_df by fetching top 10 records using df_to10_rec() is completed. 
 
-"30-Apr-24 19:49:20" - validations - INFO - The DataFrame validation by printing schema of DataFrame users_df is started.
-"30-Apr-24 19:49:20" - validations - INFO - The DataFrame users_df schema is:
-"30-Apr-24 19:49:20" - validations - INFO - 	StructField('UserID', IntegerType(), True)
-"30-Apr-24 19:49:20" - validations - INFO - 	StructField('Gender', StringType(), True)
-"30-Apr-24 19:49:20" - validations - INFO - 	StructField('Age', IntegerType(), True)
-"30-Apr-24 19:49:20" - validations - INFO - 	StructField('Occupation', IntegerType(), True)
-"30-Apr-24 19:49:20" - validations - INFO - 	StructField('Zip-code', IntegerType(), True)
-"30-Apr-24 19:49:20" - validations - INFO - The schema validation of DataFrame users_df is completed. 
+"30-Apr-24 21:38:15" - validations - INFO - The DataFrame validation by printing schema of DataFrame users_df is started.
+"30-Apr-24 21:38:15" - validations - INFO - The DataFrame users_df schema is:
+"30-Apr-24 21:38:15" - validations - INFO - 	StructField('UserID', IntegerType(), True)
+"30-Apr-24 21:38:15" - validations - INFO - 	StructField('Gender', StringType(), True)
+"30-Apr-24 21:38:15" - validations - INFO - 	StructField('Age', IntegerType(), True)
+"30-Apr-24 21:38:15" - validations - INFO - 	StructField('Occupation', IntegerType(), True)
+"30-Apr-24 21:38:15" - validations - INFO - 	StructField('Zip-code', IntegerType(), True)
+"30-Apr-24 21:38:15" - validations - INFO - The schema validation of DataFrame users_df is completed. 
 
-"30-Apr-24 19:49:20" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 19:49:20" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\fact\ratings.dat is loaded to dataframe. The extract_files() function is completed. 
+"30-Apr-24 21:38:15" - movielens_data_ingest - INFO - The extract_file() function is started.
+"30-Apr-24 21:38:15" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\fact\ratings.dat is loaded to dataframe. The extract_files() function is completed. 
 
-"30-Apr-24 19:49:20" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame ratings_df.
-"30-Apr-24 19:49:20" - validations - INFO - The DataFrame count is 1000209.
-"30-Apr-24 19:49:20" - validations - INFO - The validation of DataFrame ratings_df by counting records using df_count() is completed. 
+"30-Apr-24 21:38:15" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame ratings_df.
+"30-Apr-24 21:38:16" - validations - INFO - The DataFrame count is 1000209.
+"30-Apr-24 21:38:16" - validations - INFO - The validation of DataFrame ratings_df by counting records using df_count() is completed. 
 
-"30-Apr-24 19:49:20" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame ratings_df.
-"30-Apr-24 19:49:20" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 19:49:21" - validations - INFO - 
+"30-Apr-24 21:38:16" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame ratings_df.
+"30-Apr-24 21:38:16" - validations - INFO - The DataFrame top 10 records are: 
+"30-Apr-24 21:38:16" - validations - INFO - 
  	 UserID  MovieID  Rating Timestamp
       1     1193       5 978300760
       1      661       3 978302109
@@ -88,186 +88,31 @@
       1     2804       5 978300719
       1      594       4 978302268
       1      919       4 978301368
-"30-Apr-24 19:49:21" - validations - INFO - The validation of DataFrame ratings_df by fetching top 10 records using df_to10_rec() is completed. 
+"30-Apr-24 21:38:16" - validations - INFO - The validation of DataFrame ratings_df by fetching top 10 records using df_to10_rec() is completed. 
 
-"30-Apr-24 19:49:21" - validations - INFO - The DataFrame validation by printing schema of DataFrame ratings_df is started.
-"30-Apr-24 19:49:21" - validations - INFO - The DataFrame ratings_df schema is:
-"30-Apr-24 19:49:21" - validations - INFO - 	StructField('UserID', IntegerType(), True)
-"30-Apr-24 19:49:21" - validations - INFO - 	StructField('MovieID', IntegerType(), True)
-"30-Apr-24 19:49:21" - validations - INFO - 	StructField('Rating', IntegerType(), True)
-"30-Apr-24 19:49:21" - validations - INFO - 	StructField('Timestamp', StringType(), True)
-"30-Apr-24 19:49:21" - validations - INFO - The schema validation of DataFrame ratings_df is completed. 
+"30-Apr-24 21:38:16" - validations - INFO - The DataFrame validation by printing schema of DataFrame ratings_df is started.
+"30-Apr-24 21:38:16" - validations - INFO - The DataFrame ratings_df schema is:
+"30-Apr-24 21:38:16" - validations - INFO - 	StructField('UserID', IntegerType(), True)
+"30-Apr-24 21:38:16" - validations - INFO - 	StructField('MovieID', IntegerType(), True)
+"30-Apr-24 21:38:16" - validations - INFO - 	StructField('Rating', IntegerType(), True)
+"30-Apr-24 21:38:16" - validations - INFO - 	StructField('Timestamp', StringType(), True)
+"30-Apr-24 21:38:16" - validations - INFO - The schema validation of DataFrame ratings_df is completed. 
 
-"30-Apr-24 19:49:21" - movielens_data_preprocessing - INFO - Function perform_data_preprocessing() is started.
-"30-Apr-24 19:49:21" - movielens_data_preprocessing - INFO - movies_df dataframe is cleaned. And ready to use in further transformation.
-"30-Apr-24 19:49:22" - movielens_data_preprocessing - INFO - users_df dataframe is cleaned. And ready to use in further transformation.
-"30-Apr-24 19:49:22" - movielens_data_preprocessing - INFO - Function perform_data_preprocessing() is executed successfully. 
+"30-Apr-24 21:38:16" - movielens_data_preprocessing - INFO - Function perform_data_preprocessing() is started.
+"30-Apr-24 21:38:17" - movielens_data_preprocessing - INFO - movies_df dataframe is cleaned. And ready to use in further transformation.
+"30-Apr-24 21:38:17" - movielens_data_preprocessing - INFO - users_df dataframe is cleaned. And ready to use in further transformation.
+"30-Apr-24 21:38:18" - movielens_data_preprocessing - INFO - Function perform_data_preprocessing() is executed successfully. 
 
-"30-Apr-24 19:49:22" - movielens_data_transform - INFO - Transformation function city_report() is started.
-"30-Apr-24 19:49:22" - movielens_data_transform - INFO - Transformation function city_report() is successfully executed. 
+"30-Apr-24 21:38:18" - movielens_data_transform - INFO - Transformation function city_report() is started.
+"30-Apr-24 21:38:18" - movielens_data_transform - INFO - Transformation function city_report() is successfully executed. 
 
-"30-Apr-24 19:49:22" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame avg_rating_per_genre_year_df.
-"30-Apr-24 19:49:26" - validations - INFO - The DataFrame count is 188.
-"30-Apr-24 19:49:26" - validations - INFO - The validation of DataFrame avg_rating_per_genre_year_df by counting records using df_count() is completed. 
+"30-Apr-24 21:38:18" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame avg_rating_per_genre_year_df.
+"30-Apr-24 21:38:22" - validations - INFO - The DataFrame count is 188.
+"30-Apr-24 21:38:22" - validations - INFO - The validation of DataFrame avg_rating_per_genre_year_df by counting records using df_count() is completed. 
 
-"30-Apr-24 19:49:26" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame avg_rating_per_genre_year_df.
-"30-Apr-24 19:49:26" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 19:49:29" - validations - INFO - 
- 	     Genres  ReleaseYear  AverageRating  RatingCountPerGenre
-     Horror         1990       3.197901                 2668
-     Sci-Fi         1990       3.195493                 5059
-   Thriller         1990       3.471931                 9548
-    Fantasy         1990       2.605873                  647
-    Romance         1990       3.413793                 4350
-    Mystery         1990       3.601297                  617
- Children's         1990       2.890669                 1436
-Documentary         1990       3.983193                  119
-     Comedy         1990       3.223612                 7437
-    Western         1990       3.488565                 2536
-"30-Apr-24 19:49:29" - validations - INFO - The validation of DataFrame avg_rating_per_genre_year_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 19:49:29" - validations - INFO - The DataFrame validation by printing schema of DataFrame avg_rating_per_genre_year_df is started.
-"30-Apr-24 19:49:29" - validations - INFO - The DataFrame avg_rating_per_genre_year_df schema is:
-"30-Apr-24 19:49:29" - validations - INFO - 	StructField('Genres', StringType(), False)
-"30-Apr-24 19:49:29" - validations - INFO - 	StructField('ReleaseYear', IntegerType(), True)
-"30-Apr-24 19:49:29" - validations - INFO - 	StructField('AverageRating', DoubleType(), True)
-"30-Apr-24 19:49:29" - validations - INFO - 	StructField('RatingCountPerGenre', LongType(), False)
-"30-Apr-24 19:49:29" - validations - INFO - The schema validation of DataFrame avg_rating_per_genre_year_df is completed. 
-
-"30-Apr-24 19:49:29" - movielens_data_load - INFO -  Loading - load_file() is started.
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ._SUCCESS.crc
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=1990
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=1991
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=1992
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=1993
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=1994
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=1995
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=1996
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=1997
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=1998
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=1999
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - ReleaseYear=2000
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - _SUCCESS
-"30-Apr-24 19:49:33" - movielens_data_load - INFO - Loading - load_file() is completed. 
-
-"30-Apr-24 19:49:33" - root - INFO - run_movielens_pipeline is completed. 
-
-"30-Apr-24 19:49:33" - root - INFO - --- 35.296075105667114 seconds ---
-"30-Apr-24 21:06:14" - root - INFO - run_movielens_pipeline.py is started
-"30-Apr-24 21:06:14" - root - INFO - main() method is started 
-"30-Apr-24 21:06:14" - create_objects - INFO - get_spark_object() method is started. The 'TEST' is used.
-"30-Apr-24 21:06:17" - create_objects - INFO - Spark object is created successfully. 
-
-"30-Apr-24 21:06:22" - validations - INFO - Validate the spark object by printing Current Date [Row(current_date()=datetime.date(2024, 4, 30))]
-"30-Apr-24 21:06:22" - validations - INFO - Spark obect is validated. Spark object is ready.
-"30-Apr-24 21:06:22" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 21:06:22" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\dimension\movies.dat is loaded to dataframe. The extract_files() function is completed. 
-
-"30-Apr-24 21:06:22" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame movies_df.
-"30-Apr-24 21:06:23" - validations - INFO - The DataFrame count is 3883.
-"30-Apr-24 21:06:23" - validations - INFO - The validation of DataFrame movies_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:06:23" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame movies_df.
-"30-Apr-24 21:06:23" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:06:25" - validations - INFO - 
- 	 MovieID                              Title                       Genres
-       1                   Toy Story (1995)  Animation|Children's|Comedy
-       2                     Jumanji (1995) Adventure|Children's|Fantasy
-       3            Grumpier Old Men (1995)               Comedy|Romance
-       4           Waiting to Exhale (1995)                 Comedy|Drama
-       5 Father of the Bride Part II (1995)                       Comedy
-       6                        Heat (1995)        Action|Crime|Thriller
-       7                     Sabrina (1995)               Comedy|Romance
-       8                Tom and Huck (1995)         Adventure|Children's
-       9                Sudden Death (1995)                       Action
-      10                   GoldenEye (1995)    Action|Adventure|Thriller
-"30-Apr-24 21:06:25" - validations - INFO - The validation of DataFrame movies_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:06:25" - validations - INFO - The DataFrame validation by printing schema of DataFrame movies_df is started.
-"30-Apr-24 21:06:25" - validations - INFO - The DataFrame movies_df schema is:
-"30-Apr-24 21:06:25" - validations - INFO - 	StructField('MovieID', IntegerType(), True)
-"30-Apr-24 21:06:25" - validations - INFO - 	StructField('Title', StringType(), True)
-"30-Apr-24 21:06:25" - validations - INFO - 	StructField('Genres', StringType(), True)
-"30-Apr-24 21:06:25" - validations - INFO - The schema validation of DataFrame movies_df is completed. 
-
-"30-Apr-24 21:06:25" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 21:06:25" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\dimension\users.dat is loaded to dataframe. The extract_files() function is completed. 
-
-"30-Apr-24 21:06:25" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame users_df.
-"30-Apr-24 21:06:26" - validations - INFO - The DataFrame count is 6040.
-"30-Apr-24 21:06:26" - validations - INFO - The validation of DataFrame users_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:06:26" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame users_df.
-"30-Apr-24 21:06:26" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:06:26" - validations - INFO - 
- 	 UserID Gender  Age  Occupation  Zip-code
-      1      F    1          10     48067
-      2      M   56          16     70072
-      3      M   25          15     55117
-      4      M   45           7      2460
-      5      M   25          20     55455
-      6      F   50           9     55117
-      7      M   35           1      6810
-      8      M   25          12     11413
-      9      M   25          17     61614
-     10      F   35           1     95370
-"30-Apr-24 21:06:26" - validations - INFO - The validation of DataFrame users_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:06:26" - validations - INFO - The DataFrame validation by printing schema of DataFrame users_df is started.
-"30-Apr-24 21:06:26" - validations - INFO - The DataFrame users_df schema is:
-"30-Apr-24 21:06:26" - validations - INFO - 	StructField('UserID', IntegerType(), True)
-"30-Apr-24 21:06:26" - validations - INFO - 	StructField('Gender', StringType(), True)
-"30-Apr-24 21:06:26" - validations - INFO - 	StructField('Age', IntegerType(), True)
-"30-Apr-24 21:06:26" - validations - INFO - 	StructField('Occupation', IntegerType(), True)
-"30-Apr-24 21:06:26" - validations - INFO - 	StructField('Zip-code', IntegerType(), True)
-"30-Apr-24 21:06:26" - validations - INFO - The schema validation of DataFrame users_df is completed. 
-
-"30-Apr-24 21:06:26" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 21:06:26" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\fact\ratings.dat is loaded to dataframe. The extract_files() function is completed. 
-
-"30-Apr-24 21:06:26" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame ratings_df.
-"30-Apr-24 21:06:27" - validations - INFO - The DataFrame count is 1000209.
-"30-Apr-24 21:06:27" - validations - INFO - The validation of DataFrame ratings_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:06:27" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame ratings_df.
-"30-Apr-24 21:06:27" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:06:28" - validations - INFO - 
- 	 UserID  MovieID  Rating Timestamp
-      1     1193       5 978300760
-      1      661       3 978302109
-      1      914       3 978301968
-      1     3408       4 978300275
-      1     2355       5 978824291
-      1     1197       3 978302268
-      1     1287       5 978302039
-      1     2804       5 978300719
-      1      594       4 978302268
-      1      919       4 978301368
-"30-Apr-24 21:06:28" - validations - INFO - The validation of DataFrame ratings_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:06:28" - validations - INFO - The DataFrame validation by printing schema of DataFrame ratings_df is started.
-"30-Apr-24 21:06:28" - validations - INFO - The DataFrame ratings_df schema is:
-"30-Apr-24 21:06:28" - validations - INFO - 	StructField('UserID', IntegerType(), True)
-"30-Apr-24 21:06:28" - validations - INFO - 	StructField('MovieID', IntegerType(), True)
-"30-Apr-24 21:06:28" - validations - INFO - 	StructField('Rating', IntegerType(), True)
-"30-Apr-24 21:06:28" - validations - INFO - 	StructField('Timestamp', StringType(), True)
-"30-Apr-24 21:06:28" - validations - INFO - The schema validation of DataFrame ratings_df is completed. 
-
-"30-Apr-24 21:06:28" - movielens_data_preprocessing - INFO - Function perform_data_preprocessing() is started.
-"30-Apr-24 21:06:28" - movielens_data_preprocessing - INFO - movies_df dataframe is cleaned. And ready to use in further transformation.
-"30-Apr-24 21:06:29" - movielens_data_preprocessing - INFO - users_df dataframe is cleaned. And ready to use in further transformation.
-"30-Apr-24 21:06:29" - movielens_data_preprocessing - INFO - Function perform_data_preprocessing() is executed successfully. 
-
-"30-Apr-24 21:06:29" - movielens_data_transform - INFO - Transformation function city_report() is started.
-"30-Apr-24 21:06:29" - movielens_data_transform - INFO - Transformation function city_report() is successfully executed. 
-
-"30-Apr-24 21:06:29" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame avg_rating_per_genre_year_df.
-"30-Apr-24 21:06:33" - validations - INFO - The DataFrame count is 188.
-"30-Apr-24 21:06:33" - validations - INFO - The validation of DataFrame avg_rating_per_genre_year_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:06:33" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame avg_rating_per_genre_year_df.
-"30-Apr-24 21:06:33" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:06:36" - validations - INFO - 
+"30-Apr-24 21:38:22" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame avg_rating_per_genre_year_df.
+"30-Apr-24 21:38:22" - validations - INFO - The DataFrame top 10 records are: 
+"30-Apr-24 21:38:25" - validations - INFO - 
  	     Genres  ReleaseYear  AverageRating  RatingCountPerGenre
      Horror         1990       3.197901                 2668
   Adventure         1990       3.569218                 3684
@@ -279,446 +124,33 @@ Documentary         1990       3.983193                  119
  Children's         1990       2.890669                 1436
   Film-Noir         1990       3.777476                  737
      Sci-Fi         1990       3.195493                 5059
-"30-Apr-24 21:06:36" - validations - INFO - The validation of DataFrame avg_rating_per_genre_year_df by fetching top 10 records using df_to10_rec() is completed. 
+"30-Apr-24 21:38:25" - validations - INFO - The validation of DataFrame avg_rating_per_genre_year_df by fetching top 10 records using df_to10_rec() is completed. 
 
-"30-Apr-24 21:06:36" - validations - INFO - The DataFrame validation by printing schema of DataFrame avg_rating_per_genre_year_df is started.
-"30-Apr-24 21:06:36" - validations - INFO - The DataFrame avg_rating_per_genre_year_df schema is:
-"30-Apr-24 21:06:36" - validations - INFO - 	StructField('Genres', StringType(), False)
-"30-Apr-24 21:06:36" - validations - INFO - 	StructField('ReleaseYear', IntegerType(), True)
-"30-Apr-24 21:06:36" - validations - INFO - 	StructField('AverageRating', DoubleType(), True)
-"30-Apr-24 21:06:36" - validations - INFO - 	StructField('RatingCountPerGenre', LongType(), False)
-"30-Apr-24 21:06:36" - validations - INFO - The schema validation of DataFrame avg_rating_per_genre_year_df is completed. 
+"30-Apr-24 21:38:25" - validations - INFO - The DataFrame validation by printing schema of DataFrame avg_rating_per_genre_year_df is started.
+"30-Apr-24 21:38:25" - validations - INFO - The DataFrame avg_rating_per_genre_year_df schema is:
+"30-Apr-24 21:38:25" - validations - INFO - 	StructField('Genres', StringType(), False)
+"30-Apr-24 21:38:25" - validations - INFO - 	StructField('ReleaseYear', IntegerType(), True)
+"30-Apr-24 21:38:25" - validations - INFO - 	StructField('AverageRating', DoubleType(), True)
+"30-Apr-24 21:38:25" - validations - INFO - 	StructField('RatingCountPerGenre', LongType(), False)
+"30-Apr-24 21:38:25" - validations - INFO - The schema validation of DataFrame avg_rating_per_genre_year_df is completed. 
 
-"30-Apr-24 21:06:36" - movielens_data_load - INFO -  Loading - load_file() is started.
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ._SUCCESS.crc
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=1990
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=1991
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=1992
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=1993
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=1994
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=1995
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=1996
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=1997
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=1998
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=1999
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - ReleaseYear=2000
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - _SUCCESS
-"30-Apr-24 21:06:40" - movielens_data_load - INFO - Loading - load_file() is completed. 
+"30-Apr-24 21:38:25" - movielens_data_load - INFO -  Loading - load_file() is started.
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ._SUCCESS.crc
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=1990
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=1991
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=1992
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=1993
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=1994
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=1995
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=1996
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=1997
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=1998
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=1999
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - ReleaseYear=2000
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - _SUCCESS
+"30-Apr-24 21:38:30" - movielens_data_load - INFO - Loading - load_file() is completed. 
 
-"30-Apr-24 21:06:41" - root - INFO - run_movielens_pipeline is completed. 
+"30-Apr-24 21:38:31" - root - INFO - run_movielens_pipeline is completed. 
 
-"30-Apr-24 21:06:41" - root - INFO - --- 26.683799028396606 seconds ---
-"30-Apr-24 21:14:22" - root - INFO - run_movielens_pipeline.py is started
-"30-Apr-24 21:14:22" - root - INFO - main() method is started 
-"30-Apr-24 21:14:22" - create_objects - INFO - get_spark_object() method is started. The 'TEST' is used.
-"30-Apr-24 21:14:24" - create_objects - INFO - Spark object is created successfully. 
+"30-Apr-24 21:38:31" - root - INFO - --- 25.79785943031311 seconds --- 
 
-"30-Apr-24 21:14:26" - root - ERROR - Exception while sending command.
-Traceback (most recent call last):
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 511, in send_command
-    answer = smart_decode(self.stream.readline()[:-1])
-                          ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Python311\Lib\socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1038, in send_command
-    response = connection.send_command(command)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 539, in send_command
-    raise Py4JNetworkError(
-py4j.protocol.Py4JNetworkError: Error while sending or receiving
-"30-Apr-24 21:14:29" - validations - ERROR - Error in method - get_curr_date(). Please check the stack trace. [WinError 10061] No connection could be made because the target machine actively refused it
-Traceback (most recent call last):
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\pyspark.zip\pyspark\sql\dataframe.py", line 1257, in collect
-    sock_info = self._jdf.collectToPython()
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1322, in __call__
-    return_value = get_return_value(
-                   ^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\pyspark.zip\pyspark\errors\exceptions\captured.py", line 179, in deco
-    return f(*a, **kw)
-           ^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\protocol.py", line 334, in get_return_value
-    raise Py4JError(
-py4j.protocol.Py4JError: An error occurred while calling o31.collectToPython
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\validations.py", line 13, in get_curr_date
-    logger.info("Validate the spark object by printing Current Date " + str(opDF.collect()))
-                                                                            ^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\pyspark.zip\pyspark\sql\dataframe.py", line 1256, in collect
-    with SCCallSiteSync(self._sc):
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\pyspark.zip\pyspark\traceback_utils.py", line 81, in __exit__
-    self._context._jsc.setCallSite(None)
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1321, in __call__
-    answer = self.gateway_client.send_command(command)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1036, in send_command
-    connection = self._get_connection()
-                 ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 284, in _get_connection
-    connection = self._create_new_connection()
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 291, in _create_new_connection
-    connection.connect_to_java_server()
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 438, in connect_to_java_server
-    self.socket.connect((self.java_address, self.java_port))
-ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
-"30-Apr-24 21:14:29" - root - ERROR - Error occured in main() method. Please check the stack trace to go to the respectice module and fix it.[WinError 10061] No connection could be made because the target machine actively refused it
-Traceback (most recent call last):
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\pyspark.zip\pyspark\sql\dataframe.py", line 1257, in collect
-    sock_info = self._jdf.collectToPython()
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1322, in __call__
-    return_value = get_return_value(
-                   ^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\pyspark.zip\pyspark\errors\exceptions\captured.py", line 179, in deco
-    return f(*a, **kw)
-           ^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\protocol.py", line 334, in get_return_value
-    raise Py4JError(
-py4j.protocol.Py4JError: An error occurred while calling o31.collectToPython
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\run_movielens_pipeline.py", line 28, in main
-    get_curr_date(spark)
-  File "C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\validations.py", line 13, in get_curr_date
-    logger.info("Validate the spark object by printing Current Date " + str(opDF.collect()))
-                                                                            ^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\pyspark.zip\pyspark\sql\dataframe.py", line 1256, in collect
-    with SCCallSiteSync(self._sc):
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\pyspark.zip\pyspark\traceback_utils.py", line 81, in __exit__
-    self._context._jsc.setCallSite(None)
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1321, in __call__
-    answer = self.gateway_client.send_command(command)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\java_gateway.py", line 1036, in send_command
-    connection = self._get_connection()
-                 ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 284, in _get_connection
-    connection = self._create_new_connection()
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 291, in _create_new_connection
-    connection.connect_to_java_server()
-  File "C:\PySpark_Installed\Spark\spark-3.5.0-bin-hadoop3\python\lib\py4j-0.10.9.7-src.zip\py4j\clientserver.py", line 438, in connect_to_java_server
-    self.socket.connect((self.java_address, self.java_port))
-ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
-"30-Apr-24 21:19:17" - root - INFO - run_movielens_pipeline.py is started
-"30-Apr-24 21:19:17" - root - INFO - main() method is started 
-"30-Apr-24 21:19:17" - create_objects - INFO - get_spark_object() method is started. The 'TEST' is used.
-"30-Apr-24 21:19:19" - create_objects - INFO - Spark object is created successfully. 
-
-"30-Apr-24 21:19:24" - validations - INFO - Validate the spark object by printing Current Date [Row(current_date()=datetime.date(2024, 4, 30))]
-"30-Apr-24 21:19:24" - validations - INFO - Spark obect is validated. Spark object is ready.
-"30-Apr-24 21:19:24" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 21:19:24" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\dimension\movies.dat is loaded to dataframe. The extract_files() function is completed. 
-
-"30-Apr-24 21:19:24" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame movies_df.
-"30-Apr-24 21:19:25" - validations - INFO - The DataFrame count is 3883.
-"30-Apr-24 21:19:25" - validations - INFO - The validation of DataFrame movies_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:19:25" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame movies_df.
-"30-Apr-24 21:19:25" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:19:26" - validations - INFO - 
- 	 MovieID                              Title                       Genres
-       1                   Toy Story (1995)  Animation|Children's|Comedy
-       2                     Jumanji (1995) Adventure|Children's|Fantasy
-       3            Grumpier Old Men (1995)               Comedy|Romance
-       4           Waiting to Exhale (1995)                 Comedy|Drama
-       5 Father of the Bride Part II (1995)                       Comedy
-       6                        Heat (1995)        Action|Crime|Thriller
-       7                     Sabrina (1995)               Comedy|Romance
-       8                Tom and Huck (1995)         Adventure|Children's
-       9                Sudden Death (1995)                       Action
-      10                   GoldenEye (1995)    Action|Adventure|Thriller
-"30-Apr-24 21:19:26" - validations - INFO - The validation of DataFrame movies_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:19:26" - validations - INFO - The DataFrame validation by printing schema of DataFrame movies_df is started.
-"30-Apr-24 21:19:26" - validations - INFO - The DataFrame movies_df schema is:
-"30-Apr-24 21:19:26" - validations - INFO - 	StructField('MovieID', IntegerType(), True)
-"30-Apr-24 21:19:26" - validations - INFO - 	StructField('Title', StringType(), True)
-"30-Apr-24 21:19:26" - validations - INFO - 	StructField('Genres', StringType(), True)
-"30-Apr-24 21:19:26" - validations - INFO - The schema validation of DataFrame movies_df is completed. 
-
-"30-Apr-24 21:19:26" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 21:19:26" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\dimension\users.dat is loaded to dataframe. The extract_files() function is completed. 
-
-"30-Apr-24 21:19:26" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame users_df.
-"30-Apr-24 21:19:26" - validations - INFO - The DataFrame count is 6040.
-"30-Apr-24 21:19:26" - validations - INFO - The validation of DataFrame users_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:19:26" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame users_df.
-"30-Apr-24 21:19:26" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:19:27" - validations - INFO - 
- 	 UserID Gender  Age  Occupation  Zip-code
-      1      F    1          10     48067
-      2      M   56          16     70072
-      3      M   25          15     55117
-      4      M   45           7      2460
-      5      M   25          20     55455
-      6      F   50           9     55117
-      7      M   35           1      6810
-      8      M   25          12     11413
-      9      M   25          17     61614
-     10      F   35           1     95370
-"30-Apr-24 21:19:27" - validations - INFO - The validation of DataFrame users_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:19:27" - validations - INFO - The DataFrame validation by printing schema of DataFrame users_df is started.
-"30-Apr-24 21:19:27" - validations - INFO - The DataFrame users_df schema is:
-"30-Apr-24 21:19:27" - validations - INFO - 	StructField('UserID', IntegerType(), True)
-"30-Apr-24 21:19:27" - validations - INFO - 	StructField('Gender', StringType(), True)
-"30-Apr-24 21:19:27" - validations - INFO - 	StructField('Age', IntegerType(), True)
-"30-Apr-24 21:19:27" - validations - INFO - 	StructField('Occupation', IntegerType(), True)
-"30-Apr-24 21:19:27" - validations - INFO - 	StructField('Zip-code', IntegerType(), True)
-"30-Apr-24 21:19:27" - validations - INFO - The schema validation of DataFrame users_df is completed. 
-
-"30-Apr-24 21:19:27" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 21:19:27" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\fact\ratings.dat is loaded to dataframe. The extract_files() function is completed. 
-
-"30-Apr-24 21:19:27" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame ratings_df.
-"30-Apr-24 21:19:28" - validations - INFO - The DataFrame count is 1000209.
-"30-Apr-24 21:19:28" - validations - INFO - The validation of DataFrame ratings_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:19:28" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame ratings_df.
-"30-Apr-24 21:19:28" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:19:28" - validations - INFO - 
- 	 UserID  MovieID  Rating Timestamp
-      1     1193       5 978300760
-      1      661       3 978302109
-      1      914       3 978301968
-      1     3408       4 978300275
-      1     2355       5 978824291
-      1     1197       3 978302268
-      1     1287       5 978302039
-      1     2804       5 978300719
-      1      594       4 978302268
-      1      919       4 978301368
-"30-Apr-24 21:19:28" - validations - INFO - The validation of DataFrame ratings_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:19:28" - validations - INFO - The DataFrame validation by printing schema of DataFrame ratings_df is started.
-"30-Apr-24 21:19:28" - validations - INFO - The DataFrame ratings_df schema is:
-"30-Apr-24 21:19:28" - validations - INFO - 	StructField('UserID', IntegerType(), True)
-"30-Apr-24 21:19:28" - validations - INFO - 	StructField('MovieID', IntegerType(), True)
-"30-Apr-24 21:19:28" - validations - INFO - 	StructField('Rating', IntegerType(), True)
-"30-Apr-24 21:19:28" - validations - INFO - 	StructField('Timestamp', StringType(), True)
-"30-Apr-24 21:19:28" - validations - INFO - The schema validation of DataFrame ratings_df is completed. 
-
-"30-Apr-24 21:19:28" - movielens_data_preprocessing - INFO - Function perform_data_preprocessing() is started.
-"30-Apr-24 21:19:29" - movielens_data_preprocessing - INFO - movies_df dataframe is cleaned. And ready to use in further transformation.
-"30-Apr-24 21:19:29" - movielens_data_preprocessing - INFO - users_df dataframe is cleaned. And ready to use in further transformation.
-"30-Apr-24 21:19:29" - movielens_data_preprocessing - INFO - Function perform_data_preprocessing() is executed successfully. 
-
-"30-Apr-24 21:19:29" - movielens_data_transform - INFO - Transformation function city_report() is started.
-"30-Apr-24 21:19:29" - movielens_data_transform - INFO - Transformation function city_report() is successfully executed. 
-
-"30-Apr-24 21:19:29" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame avg_rating_per_genre_year_df.
-"30-Apr-24 21:19:33" - validations - INFO - The DataFrame count is 188.
-"30-Apr-24 21:19:33" - validations - INFO - The validation of DataFrame avg_rating_per_genre_year_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:19:33" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame avg_rating_per_genre_year_df.
-"30-Apr-24 21:19:33" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:19:36" - validations - INFO - 
- 	     Genres  ReleaseYear  AverageRating  RatingCountPerGenre
-     Horror         1990       3.197901                 2668
-  Adventure         1990       3.569218                 3684
-      Drama         1990       3.727360                 8359
-    Fantasy         1990       2.605873                  647
-  Animation         1990       3.808696                  460
-Documentary         1990       3.983193                  119
-      Crime         1990       3.560296                 4196
- Children's         1990       2.890669                 1436
-  Film-Noir         1990       3.777476                  737
-     Sci-Fi         1990       3.195493                 5059
-"30-Apr-24 21:19:36" - validations - INFO - The validation of DataFrame avg_rating_per_genre_year_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:19:36" - validations - INFO - The DataFrame validation by printing schema of DataFrame avg_rating_per_genre_year_df is started.
-"30-Apr-24 21:19:36" - validations - INFO - The DataFrame avg_rating_per_genre_year_df schema is:
-"30-Apr-24 21:19:36" - validations - INFO - 	StructField('Genres', StringType(), False)
-"30-Apr-24 21:19:36" - validations - INFO - 	StructField('ReleaseYear', IntegerType(), True)
-"30-Apr-24 21:19:36" - validations - INFO - 	StructField('AverageRating', DoubleType(), True)
-"30-Apr-24 21:19:36" - validations - INFO - 	StructField('RatingCountPerGenre', LongType(), False)
-"30-Apr-24 21:19:36" - validations - INFO - The schema validation of DataFrame avg_rating_per_genre_year_df is completed. 
-
-"30-Apr-24 21:19:36" - movielens_data_load - INFO -  Loading - load_file() is started.
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ._SUCCESS.crc
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=1990
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=1991
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=1992
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=1993
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=1994
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=1995
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=1996
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=1997
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=1998
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=1999
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - ReleaseYear=2000
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - _SUCCESS
-"30-Apr-24 21:19:41" - movielens_data_load - INFO - Loading - load_file() is completed. 
-
-"30-Apr-24 21:19:41" - root - INFO - run_movielens_pipeline is completed. 
-
-"30-Apr-24 21:19:41" - root - INFO - --- 23.709350109100342 seconds ---
-"30-Apr-24 21:21:28" - root - INFO - run_movielens_pipeline.py is started
-"30-Apr-24 21:21:28" - root - INFO - main() method is started 
-"30-Apr-24 21:21:28" - create_objects - INFO - get_spark_object() method is started. The 'TEST' is used.
-"30-Apr-24 21:21:39" - create_objects - INFO - Spark object is created successfully. 
-
-"30-Apr-24 21:21:43" - validations - INFO - Validate the spark object by printing Current Date [Row(current_date()=datetime.date(2024, 4, 30))]
-"30-Apr-24 21:21:43" - validations - INFO - Spark obect is validated. Spark object is ready.
-"30-Apr-24 21:21:43" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 21:21:43" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\dimension\movies.dat is loaded to dataframe. The extract_files() function is completed. 
-
-"30-Apr-24 21:21:43" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame movies_df.
-"30-Apr-24 21:21:44" - validations - INFO - The DataFrame count is 3883.
-"30-Apr-24 21:21:44" - validations - INFO - The validation of DataFrame movies_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:21:44" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame movies_df.
-"30-Apr-24 21:21:44" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:21:45" - validations - INFO - 
- 	 MovieID                              Title                       Genres
-       1                   Toy Story (1995)  Animation|Children's|Comedy
-       2                     Jumanji (1995) Adventure|Children's|Fantasy
-       3            Grumpier Old Men (1995)               Comedy|Romance
-       4           Waiting to Exhale (1995)                 Comedy|Drama
-       5 Father of the Bride Part II (1995)                       Comedy
-       6                        Heat (1995)        Action|Crime|Thriller
-       7                     Sabrina (1995)               Comedy|Romance
-       8                Tom and Huck (1995)         Adventure|Children's
-       9                Sudden Death (1995)                       Action
-      10                   GoldenEye (1995)    Action|Adventure|Thriller
-"30-Apr-24 21:21:45" - validations - INFO - The validation of DataFrame movies_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:21:45" - validations - INFO - The DataFrame validation by printing schema of DataFrame movies_df is started.
-"30-Apr-24 21:21:45" - validations - INFO - The DataFrame movies_df schema is:
-"30-Apr-24 21:21:45" - validations - INFO - 	StructField('MovieID', IntegerType(), True)
-"30-Apr-24 21:21:45" - validations - INFO - 	StructField('Title', StringType(), True)
-"30-Apr-24 21:21:45" - validations - INFO - 	StructField('Genres', StringType(), True)
-"30-Apr-24 21:21:45" - validations - INFO - The schema validation of DataFrame movies_df is completed. 
-
-"30-Apr-24 21:21:45" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 21:21:45" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\dimension\users.dat is loaded to dataframe. The extract_files() function is completed. 
-
-"30-Apr-24 21:21:45" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame users_df.
-"30-Apr-24 21:21:46" - validations - INFO - The DataFrame count is 6040.
-"30-Apr-24 21:21:46" - validations - INFO - The validation of DataFrame users_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:21:46" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame users_df.
-"30-Apr-24 21:21:46" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:21:46" - validations - INFO - 
- 	 UserID Gender  Age  Occupation  Zip-code
-      1      F    1          10     48067
-      2      M   56          16     70072
-      3      M   25          15     55117
-      4      M   45           7      2460
-      5      M   25          20     55455
-      6      F   50           9     55117
-      7      M   35           1      6810
-      8      M   25          12     11413
-      9      M   25          17     61614
-     10      F   35           1     95370
-"30-Apr-24 21:21:46" - validations - INFO - The validation of DataFrame users_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:21:46" - validations - INFO - The DataFrame validation by printing schema of DataFrame users_df is started.
-"30-Apr-24 21:21:46" - validations - INFO - The DataFrame users_df schema is:
-"30-Apr-24 21:21:46" - validations - INFO - 	StructField('UserID', IntegerType(), True)
-"30-Apr-24 21:21:46" - validations - INFO - 	StructField('Gender', StringType(), True)
-"30-Apr-24 21:21:46" - validations - INFO - 	StructField('Age', IntegerType(), True)
-"30-Apr-24 21:21:46" - validations - INFO - 	StructField('Occupation', IntegerType(), True)
-"30-Apr-24 21:21:46" - validations - INFO - 	StructField('Zip-code', IntegerType(), True)
-"30-Apr-24 21:21:46" - validations - INFO - The schema validation of DataFrame users_df is completed. 
-
-"30-Apr-24 21:21:46" - movielens_data_ingest - INFO - The extract_file() function is started.
-"30-Apr-24 21:21:46" - movielens_data_ingest - INFO - The input file C:\Users\Dell\Desktop\GFK Assesment Project\MovieLens_Project\movieLens_data_pipeline\src\main\python\bin\..\staging\fact\ratings.dat is loaded to dataframe. The extract_files() function is completed. 
-
-"30-Apr-24 21:21:46" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame ratings_df.
-"30-Apr-24 21:21:47" - validations - INFO - The DataFrame count is 1000209.
-"30-Apr-24 21:21:47" - validations - INFO - The validation of DataFrame ratings_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:21:47" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame ratings_df.
-"30-Apr-24 21:21:47" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:21:47" - validations - INFO - 
- 	 UserID  MovieID  Rating Timestamp
-      1     1193       5 978300760
-      1      661       3 978302109
-      1      914       3 978301968
-      1     3408       4 978300275
-      1     2355       5 978824291
-      1     1197       3 978302268
-      1     1287       5 978302039
-      1     2804       5 978300719
-      1      594       4 978302268
-      1      919       4 978301368
-"30-Apr-24 21:21:47" - validations - INFO - The validation of DataFrame ratings_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:21:47" - validations - INFO - The DataFrame validation by printing schema of DataFrame ratings_df is started.
-"30-Apr-24 21:21:47" - validations - INFO - The DataFrame ratings_df schema is:
-"30-Apr-24 21:21:47" - validations - INFO - 	StructField('UserID', IntegerType(), True)
-"30-Apr-24 21:21:47" - validations - INFO - 	StructField('MovieID', IntegerType(), True)
-"30-Apr-24 21:21:47" - validations - INFO - 	StructField('Rating', IntegerType(), True)
-"30-Apr-24 21:21:47" - validations - INFO - 	StructField('Timestamp', StringType(), True)
-"30-Apr-24 21:21:47" - validations - INFO - The schema validation of DataFrame ratings_df is completed. 
-
-"30-Apr-24 21:21:47" - movielens_data_preprocessing - INFO - Function perform_data_preprocessing() is started.
-"30-Apr-24 21:21:48" - movielens_data_preprocessing - INFO - movies_df dataframe is cleaned. And ready to use in further transformation.
-"30-Apr-24 21:21:49" - movielens_data_preprocessing - INFO - users_df dataframe is cleaned. And ready to use in further transformation.
-"30-Apr-24 21:21:49" - movielens_data_preprocessing - INFO - Function perform_data_preprocessing() is executed successfully. 
-
-"30-Apr-24 21:21:49" - movielens_data_transform - INFO - Transformation function city_report() is started.
-"30-Apr-24 21:21:49" - movielens_data_transform - INFO - Transformation function city_report() is successfully executed. 
-
-"30-Apr-24 21:21:49" - validations - INFO - The DataFrame validation by counting records using df.count() is started for DataFrame avg_rating_per_genre_year_df.
-"30-Apr-24 21:21:52" - validations - INFO - The DataFrame count is 188.
-"30-Apr-24 21:21:52" - validations - INFO - The validation of DataFrame avg_rating_per_genre_year_df by counting records using df_count() is completed. 
-
-"30-Apr-24 21:21:52" - validations - INFO - The DataFrame validation by fetching top 10 records using df.top10_rec() is started for DataFrame avg_rating_per_genre_year_df.
-"30-Apr-24 21:21:52" - validations - INFO - The DataFrame top 10 records are: 
-"30-Apr-24 21:21:55" - validations - INFO - 
- 	     Genres  ReleaseYear  AverageRating  RatingCountPerGenre
-     Horror         1990       3.197901                 2668
-  Adventure         1990       3.569218                 3684
-      Drama         1990       3.727360                 8359
-    Fantasy         1990       2.605873                  647
-  Animation         1990       3.808696                  460
-Documentary         1990       3.983193                  119
-      Crime         1990       3.560296                 4196
- Children's         1990       2.890669                 1436
-  Film-Noir         1990       3.777476                  737
-     Sci-Fi         1990       3.195493                 5059
-"30-Apr-24 21:21:55" - validations - INFO - The validation of DataFrame avg_rating_per_genre_year_df by fetching top 10 records using df_to10_rec() is completed. 
-
-"30-Apr-24 21:21:55" - validations - INFO - The DataFrame validation by printing schema of DataFrame avg_rating_per_genre_year_df is started.
-"30-Apr-24 21:21:55" - validations - INFO - The DataFrame avg_rating_per_genre_year_df schema is:
-"30-Apr-24 21:21:55" - validations - INFO - 	StructField('Genres', StringType(), False)
-"30-Apr-24 21:21:55" - validations - INFO - 	StructField('ReleaseYear', IntegerType(), True)
-"30-Apr-24 21:21:55" - validations - INFO - 	StructField('AverageRating', DoubleType(), True)
-"30-Apr-24 21:21:55" - validations - INFO - 	StructField('RatingCountPerGenre', LongType(), False)
-"30-Apr-24 21:21:55" - validations - INFO - The schema validation of DataFrame avg_rating_per_genre_year_df is completed. 
-
-"30-Apr-24 21:21:55" - movielens_data_load - INFO -  Loading - load_file() is started.
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ._SUCCESS.crc
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=1990
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=1991
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=1992
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=1993
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=1994
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=1995
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=1996
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=1997
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=1998
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=1999
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - ReleaseYear=2000
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - _SUCCESS
-"30-Apr-24 21:22:00" - movielens_data_load - INFO - Loading - load_file() is completed. 
-
-"30-Apr-24 21:22:00" - root - INFO - run_movielens_pipeline is completed. 
-
-"30-Apr-24 21:22:00" - root - INFO - --- 32.557011127471924 seconds ---
