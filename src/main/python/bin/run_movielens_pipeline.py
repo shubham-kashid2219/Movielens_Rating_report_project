@@ -114,7 +114,7 @@ def main():
         # Stop the SparkSession
         spark.stop()
         logging.info("run_movielens_pipeline is completed. \n")
-        logging.info("--- %s seconds ---" % (time.time() - start_time))
+        logging.info("--- %s seconds --- \n" % (time.time() - start_time))
     except Exception as exp:
         logging.error("Error occured in main() method. Please check the stack trace to go to the respectice module and fix it." + str(exp), exc_info=True)
         sys.exit(1)
