@@ -1,0 +1,3 @@
+spark-submit \
+    --properties-file ../util/spark-config.properties
+    run_movielens_pipeline.py

@@ -1,4 +1,4 @@
-"30-Apr-24 21:38:05" - root - INFO - run_movielens_pipeline.py is started
+git"30-Apr-24 21:38:05" - root - INFO - run_movielens_pipeline.py is started
 "30-Apr-24 21:38:05" - root - INFO - main() method is started 
 "30-Apr-24 21:38:05" - create_objects - INFO - get_spark_object() method is started. The 'TEST' is used.
 "30-Apr-24 21:38:07" - create_objects - INFO - Spark object is created successfully. 
